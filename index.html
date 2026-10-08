@@ -1,139 +1,123 @@
 <!DOCTYPE html>
-<html lang="tl">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Download Draft Survey Pro APK</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f0f2f5;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      margin: 0;
-      padding: 20px;
-    }
-    .card {
-      background: #ffffff;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      max-width: 450px;
-      width: 100%;
-      text-align: center;
-    }
-    h2 { color: #1c1e21; margin-bottom: 5px; }
-    .app-title { font-size: 14px; color: #005ce6; font-weight: bold; margin-bottom: 15px; }
-    p { color: #606770; font-size: 15px; line-height: 1.5; }
-    
-    .donation-box {
-      background: #e7f3ff;
-      border: 1px solid #1877f2;
-      border-radius: 8px;
-      padding: 15px;
-      margin: 20px 0;
-    }
-    .donation-box h3 { margin: 0 0 10px 0; color: #1877f2; }
-    .account-number {
-      font-size: 20px;
-      font-weight: bold;
-      color: #005ce6;
-      background: #fff;
-      padding: 10px;
-      border: 1px dashed #1877f2;
-      border-radius: 6px;
-      display: inline-block;
-      margin-top: 5px;
-      letter-spacing: 1px;
-    }
-    .qr-img {
-      max-width: 200px;
-      width: 100%;
-      height: auto;
-      margin-top: 15px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-    }
-
-    .btn {
-      display: block;
-      width: 100%;
-      padding: 14px;
-      background-color: #42b72a;
-      color: white;
-      font-size: 16px;
-      font-weight: bold;
-      border: none;
-      border-radius: 6px;
-      text-decoration: none;
-      box-sizing: border-box;
-      margin-top: 15px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    .btn:disabled, .btn.disabled {
-      background-color: #cccccc;
-      cursor: not-allowed;
-      pointer-events: none;
-    }
-    .btn:hover:not(.disabled) {
-      background-color: #36a420;
-    }
-
-    #timer-text {
-      font-size: 14px;
-      color: #888;
-      margin-top: 10px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Draft Survey Pro APK</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: #1e1e1e;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            max-width: 450px;
+            width: 100%;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 5px;
+            color: #ffffff;
+        }
+        .app-title {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+        .donation-box {
+            background-color: #2a2a2a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .donation-box h3 {
+            margin-top: 0;
+            color: #4da6ff;
+        }
+        .gcash-number {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #007bff;
+            background-color: #0f1c2e;
+            padding: 8px 15px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 10px 0;
+            letter-spacing: 1px;
+        }
+        .dev-name {
+            font-size: 0.95em;
+            color: #ccc;
+            margin-bottom: 10px;
+        }
+        .qr-image {
+            max-width: 100%;
+            height: auto;
+            max-height: 200px;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+        .timer-text {
+            font-size: 0.9em;
+            color: #aaa;
+            margin-bottom: 15px;
+        }
+        .download-btn {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            text-decoration: none;
+            display: inline-block;
+            box-sizing: border-box;
+            transition: background-color 0.3s;
+        }
+        .download-btn:hover {
+            background-color: #218838;
+        }
+        .download-btn.disabled {
+            background-color: #555;
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+    </style>
 </head>
 <body>
 
-<div class="card">
-  <h2>Salamat sa Pag-download!</h2>
-  <div class="app-title">📦 Draft Survey Pro APK</div>
-  <p>Ang app na ito ay libre gamitin. Kung nakatulong ito sa iyo, maaari kang mag-iwan ng kaunting suporta o donation para sa tuloy-tuloy na updates!</p>
+<div class="container">
+    <h2>Salamat sa Pag-download!</h2>
+    <div class="app-title">📦 Draft Survey Pro APK</div>
+    
+    <p>Ang app na ito ay libre gamitin. Kung nakatulong ito sa iyo, maaari kang mag-iwan ng kaunting suporta o donation para sa tuloy-tuloy na updates!</p>
+    
+    <div class="donation-box">
+        <h3>💙 Support the Developer</h3>
+        <p style="margin: 5px 0; font-size: 0.85em; color: #aaa;">GCash Number</p>
+        <div class="gcash-number">09192590269</div>
+        <div class="dev-name">Name: <strong>2/O Renante Fullo</strong></div>
+        <img src="gcash-qr.png" alt="GCash QR Code" class="qr-image" onerror="this.style.display='none'">
+    </div>
 
-  <!-- DONATION DETAILS -->
-  <div class="donation-box">
-    <h3>💙 Support the Developer</h3>
-    <p style="margin:0;">GCash Number:</p>
-    <div class="account-number">09192590269</div>
-    <p style="margin-top: 8px; font-size: 14px; font-weight: 500; color: #333;">Name: Kenneth Quintero</p>
-
-    <!-- KUNG MAY QR CODE FILE KA SA GITHUB, PALITAN ANG FILENAME SA IBABA -->
-    <img src="gcash-qr.png" alt="GCash QR Code" class="qr-img">
-  </div>
-
-  <p id="timer-text">Lalabas ang download link sa loob ng <b id="countdown">5</b> segundo...</p>
-
-  <!-- DOWNLOAD BUTTON -->
-  <a id="downloadBtn" href="#" class="btn disabled" target="_blank">Proceed to Download File</a>
+    <div class="timer-text" id="timer-status">Handa na ang iyong file!</div>
+    <a href="https://www.mediafire.com/file/g3har6sim5ltf3o/Draft-Survey-Pro-APK.zip/file" id="download-btn" class="download-btn">Proceed to Download File</a>
 </div>
-
-<script>
-  // DIRECT MEDIAFIRE LINK FOR DRAFT SURVEY PRO APK
-  const myAppFileUrl = "https://www.mediafire.com/file/g3har6sim5ltf3o/Draft-Survey-Pro-APK.zip/file";
-
-  let timeLeft = 5; // Bilang ng segundo bago mag-activate ang button
-  const countdownElem = document.getElementById('countdown');
-  const downloadBtn = document.getElementById('downloadBtn');
-  const timerText = document.getElementById('timer-text');
-
-  const timer = setInterval(() => {
-    timeLeft--;
-    countdownElem.textContent = timeLeft;
-
-    if (timeLeft <= 0) {
-      clearInterval(timer);
-      timerText.textContent = "Handa na ang iyong file!";
-      downloadBtn.href = myAppFileUrl;
-      downloadBtn.classList.remove('disabled');
-    }
-  }, 1000);
-</script>
 
 </body>
 </html>
