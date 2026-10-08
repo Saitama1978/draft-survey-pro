@@ -35,6 +35,17 @@
             font-size: 0.9em;
             margin-bottom: 20px;
         }
+        .notice-box {
+            background-color: #2b2510;
+            border: 1px solid #8a6d3b;
+            color: #f0ad4e;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 0.88em;
+            margin-bottom: 20px;
+            text-align: left;
+            line-height: 1.4;
+        }
         .donation-box {
             background-color: #2a2a2a;
             border: 1px solid #333;
@@ -69,11 +80,6 @@
             border-radius: 6px;
             margin-top: 10px;
         }
-        .timer-text {
-            font-size: 0.9em;
-            color: #aaa;
-            margin-bottom: 15px;
-        }
         .download-btn {
             background-color: #28a745;
             color: white;
@@ -92,11 +98,6 @@
         .download-btn:hover {
             background-color: #218838;
         }
-        .download-btn.disabled {
-            background-color: #555;
-            cursor: not-allowed;
-            opacity: 0.6;
-        }
     </style>
 </head>
 <body>
@@ -105,7 +106,10 @@
     <h2>Salamat sa Pag-download!</h2>
     <div class="app-title">📦 Draft Survey Pro APK</div>
     
-    <p>Ang app na ito ay libre gamitin. Kung nakatulong ito sa iyo, maaari kang mag-iwan ng kaunting suporta o donation para sa tuloy-tuloy na updates!</p>
+    <div class="notice-box">
+        🔒 <strong>PASSWORD PROTECTED FILE</strong><br>
+        Ang ZIP file na ito ay may password. Pagkatapos magpadala ng suporta/donation sa GCash, i-send ang screenshot ng proof of payment sa akin sa Messenger para makuha ang password!
+    </div>
     
     <div class="donation-box">
         <h3>💙 Support the Developer</h3>
@@ -115,8 +119,7 @@
         <img src="gcash-qr.png" alt="GCash QR Code" class="qr-image" onerror="this.style.display='none'">
     </div>
 
-    <div class="timer-text" id="timer-status">Handa na ang iyong file!</div>
-    <a href="https://www.mediafire.com/file/g3har6sim5ltf3o/Draft-Survey-Pro-APK.zip/file" id="download-btn" class="download-btn">Proceed to Download File</a>
+    <a href="https://www.mediafire.com/file/60crnqfwjpebwgd/DraftSurveyPro/file" target="_blank" class="download-btn">Proceed to Download File</a>
 </div>
 
 </body>
